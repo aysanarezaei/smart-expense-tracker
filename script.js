@@ -1,8 +1,9 @@
-let balance = 1000;
-let income = 500;
-let expense = 200;
+function calculateBalance(income, expense) {
+    let balance = income - expense;
 
-let totalBalance = balance + income - expense;
+    return balance;
+}
 
-console.log("Your balance is:");
-console.log(totalBalance);
+let result = calculateBalance(800, 300);
+
+console.log(result);
