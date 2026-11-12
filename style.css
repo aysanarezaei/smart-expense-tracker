@@ -39,3 +39,27 @@ h1 {
     color: #D9C4CC;
     margin-top: 12px;
 }
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.summary h2 {
+    margin-top: 12px;
+    color: #D9C4CC;
+}
+
+.card p {
+    color: #BFC0C5;
+}
+
+@media (max-width: 600px) {
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 15px;
+    }
+}
