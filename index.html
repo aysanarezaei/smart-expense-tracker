@@ -18,57 +18,77 @@
             <p class="subtitle">Manage your money smarter.</p>
         </header>
 
+        <!-- Balance -->
         <section class="card">
             <p>Total Balance</p>
-            <h2 class="balance">€ 1,050.00</h2>
+            <h2 class="balance" id="total-balance">0.00 €</h2>
         </section>
 
+        <!-- Income and Expenses -->
         <section class="summary">
 
             <div class="card">
                 <p>Total Income</p>
-                <h2>€ 1,500.00</h2>
+                <h2 id="total-income">0.00 €</h2>
             </div>
 
             <div class="card">
                 <p>Total Expenses</p>
-                <h2>€ 450.00</h2>
+                <h2 id="total-expenses">0.00 €</h2>
             </div>
 
         </section>
 
-       <section class="card">
-    <h2>Add New Transaction</h2>
+        <!-- Add Transaction -->
+        <section class="card">
+            <h2>Add New Transaction</h2>
 
-    <form id="transaction-form">
+            <form id="transaction-form">
 
-        <label for="type">Transaction Type</label>
-        <select id="type">
-            <option value="income">Income</option>
-            <option value="expense">Expense</option>
-        </select>
+                <label for="type">Transaction Type</label>
 
-        <label for="amount">Amount (€)</label>
-        <input type="number" id="amount" placeholder="Enter amount" required>
+                <select id="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
 
-        <label for="description">Description</label>
-        <input type="text" id="description" placeholder="Enter description" required>
+                <label for="amount">Amount (€)</label>
 
-        <button type="submit">Add Transaction</button>
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Enter amount"
+                    min="0.01"
+                    step="0.01"
+                    required
+                >
 
-    </form>
-</section>
+                <label for="description">Description</label>
 
-<section class="card">
-    <h2>Recent Transactions</h2>
-    <ul id="transaction-list">
-        <li>No transactions yet.</li>
-    </ul>
-</section>
+                <input
+                    type="text"
+                    id="description"
+                    placeholder="Enter description"
+                    required
+                >
 
-<script src="script.js"></script>
-</body>
+                <button type="submit">Add Transaction</button>
+
+            </form>
+        </section>
+
+        <!-- Transaction History -->
+        <section class="card">
+            <h2>Recent Transactions</h2>
+
+            <ul id="transaction-list">
+                <li>No transactions yet.</li>
+            </ul>
+        </section>
+
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
