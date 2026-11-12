@@ -58,6 +58,39 @@ h1 {
     .summary {
         grid-template-columns: 1fr;
     }
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+input, select {
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid #65404D;
+    background: #100B0D;
+    color: white;
+    font-size: 15px;
+}
+
+label {
+    color: #D9C4CC;
+}
+
+button {
+    padding: 14px;
+    background: #7E1938;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #A52D4E;
+}
 
     body {
         padding: 15px;
