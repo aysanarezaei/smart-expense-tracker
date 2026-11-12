@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #100B0D;
+    color: #F5F0F2;
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    color: #B52D50;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #BFC0C5;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #1D1519;
+    border: 1px solid #54313E;
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.balance {
+    font-size: 36px;
+    color: #D9C4CC;
+    margin-top: 12px;
+}
